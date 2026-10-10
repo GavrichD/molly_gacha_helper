@@ -11,7 +11,7 @@
   import { getQualityMultiplier } from '../lib/data/quality';
   import { rarityLabel } from '../lib/format';
   import { cardImageUrl } from '../lib/data/images';
-  import type { Rarity } from '../lib/types';
+  import type { Rarity, EffectType } from '../lib/types';
 
   let bannerFilter = $state<string>('all');
   let rarityFilter = $state<string>('all');
@@ -43,6 +43,7 @@
     values: number[];
     placed: boolean;
     artUrl: string | null;
+    effectType: EffectType;
   }
 
   const items = $derived<PoolItem[]>(
@@ -70,6 +71,7 @@
           values,
           placed: isPlacedAnywhere(c.id),
           artUrl: cardImageUrl(c.id),
+          effectType: eff.effects[0]?.type ?? 'fixed_coins',
         };
       })
       .filter((x): x is PoolItem => x !== null)
@@ -99,6 +101,13 @@
     if (i < item.level) return 'n-done';
     if (i === item.level) return 'n-current';
     return 'n-gray';
+  }
+
+    // Значок типа эффекта: монеты / шанс ролл-тикета / шанс реролл-тикета
+  function effectIcon(type: string): string {
+    if (type === 'chance_roll_ticket') return '🎫%';
+    if (type === 'chance_reroll_ticket') return '🔄%';
+    return '💰';
   }
 </script>
 
@@ -147,18 +156,20 @@
           {/if}
         </div>
 
-        <div class="name">{item.name}</div>
+        <div class="card-text">
+          <div class="name">{item.name}</div>
 
-        <div class="nums">
-          <span class="star">*</span>
-          {#each item.values as v, i}
-            <span class={numClass(item, i)}>{Math.round(v)}</span>
-          {/each}
-        </div>
+          <div class="nums">
+            <span class="star">{effectIcon(item.effectType)}</span>
+            {#each item.values as v, i}
+              <span class={numClass(item, i)}>{Math.round(v)}</span>
+            {/each}
+          </div>
 
-        <div class="pool-bottom">
-          <span>#{item.owned ? item.quality : '—'}</span>
-          <span>{item.owned ? '+' + item.level : 'нет'}</span>
+          <div class="pool-bottom">
+            <span>#{item.owned ? item.quality : '—'}</span>
+            <span>{item.owned ? '+' + item.level : 'нет'}</span>
+          </div>
         </div>
       </button>
     {/each}

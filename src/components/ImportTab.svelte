@@ -1,6 +1,7 @@
 <script lang="ts">
-  import { state as appState } from '../lib/state.svelte';
+  import { state as appState, applyGameDorms } from '../lib/state.svelte';
   import { loadUserData } from '../lib/api/client';
+  
 
   let userId = $state(945690716);
   let loading = $state(false);
@@ -8,6 +9,13 @@
   let success = $state('');
   let showFallback = $state(false);
   let fallbackJson = $state('');
+  let applied = $state('');
+
+  function applyDorms() {
+    const r = applyGameDorms();
+    applied = `Применено: ${r.economy} в экономике, ${r.roll} в крутках. Текущая сборка заменена на игровую.`;
+  }
+
 
   // Выносим placeholder в переменную — иначе Svelte парсит фигурные скобки как выражения
   const fallbackPlaceholder = '{"profile": {...}, "collection": [...], "dorms": {...}}';
@@ -103,6 +111,15 @@
     <p><button onclick={handleFallbackImport}>Импортировать JSON</button></p>
   {/if}
   
+  {#if appState.userDorms.economy.length || appState.userDorms.roll.length}
+    <p>
+      <button onclick={applyDorms}>Применить общагу из игры</button>
+    </p>
+    {#if applied}
+      <div class="success">{applied}</div>
+    {/if}
+  {/if}
+
   {#if appState.userProfile}
     <h3>Загруженные данные</h3>
     <ul class="stats">

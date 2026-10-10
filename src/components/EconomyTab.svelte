@@ -6,35 +6,33 @@
     setRollPrice,
     setRerollPrice,
     resetWeek,
+    applyGameDorms,
     PRICE_TIERS,
     type DormTarget,
   } from '../lib/state.svelte';
-  import CardPool from './CardPool.svelte';
   import { cardEffects } from '../lib/data/cardEffects';
   import { calculateDormBonuses } from '../lib/calc/dorm';
   import { calculateWeeklyIncome } from '../lib/calc/income';
   import { config } from '../lib/config';
   import { fmt } from '../lib/format';
   import CardSlot from './CardSlot.svelte';
+  import CardPool from './CardPool.svelte';
   import type { CardInstance } from '../lib/types';
 
-  // Все пропсы в одном вызове $props()
   let {
     target,
     hideSegment = false,
+    onGoImport,
   }: {
     target: DormTarget;
     hideSegment?: boolean;
+    onGoImport?: () => void;
   } = $props();
 
-  // Внутренний переключатель «Экономика / Тикеты» на вкладке Экономика
   let sub = $state<'economy' | 'roll'>('economy');
+  let appliedMsg = $state('');
 
-  // Для вкладки Крутки hideSegment=true, используем target напрямую;
-  // для вкладки Экономика переключаем sub.
-  const effectiveTarget = $derived<'economy' | 'roll' | 'passive'>(
-    hideSegment ? target : sub
-  );
+  const effectiveTarget = $derived<'economy' | 'roll' | 'passive'>(hideSegment ? target : sub);
 
   const slots = $derived(appState.dorms[effectiveTarget]);
 
@@ -52,8 +50,6 @@
     })
   );
 
-  // Бонусы и доход считаем только для экономической общаги.
-  // Для круточной и пассивной — оставим слоты без блока цифр.
   const bonuses = $derived(
     effectiveTarget === 'economy'
       ? calculateDormBonuses(instances, cardEffects)
@@ -70,10 +66,29 @@
         )
       : null
   );
+
+  // Если данные игрока загружены — применяем игровую общагу,
+  // если нет — перебрасываем на вкладку импорта (там вводится ID)
+  function applyOrGo() {
+    if (appState.userDorms.economy.length || appState.userDorms.roll.length) {
+      const r = applyGameDorms();
+      appliedMsg = `Применено: ${r.economy} в экономике, ${r.roll} в крутках. Сборка заменена на игровую.`;
+    } else {
+      appliedMsg = '';
+      onGoImport?.();
+    }
+  }
 </script>
 
 <section class="panel">
-  <h2>{target === 'economy' ? 'Общага' : 'Общага «Крутки»'}</h2>
+  <div class="head-row">
+    <h2>{target === 'economy' ? 'Общага' : 'Общага «Крутки»'}</h2>
+    <button class="ghost" onclick={applyOrGo}>Применить общагу из игры</button>
+  </div>
+
+  {#if appliedMsg}
+    <div class="success">{appliedMsg}</div>
+  {/if}
 
   {#if !hideSegment}
     <div class="segmented">
@@ -182,4 +197,5 @@
     </div>
   {/if}
 </section>
+
 <CardPool />

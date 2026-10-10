@@ -115,3 +115,21 @@ export function resetWeek(): void {
   state.settings.rollTicketsPurchased = 0;
   state.settings.rerollTicketsPurchased = 0;
 }
+
+// Заменяет текущую сборку на общагу игрока из игры (с префиллом уровня/качества)
+export function applyGameDorms(): { economy: number; roll: number } {
+  const build = (ids: number[]) =>
+    ids
+      .filter((id) => cardById(id) !== undefined)
+      .map((id) => {
+        const best = getBestInstance(id);
+        return {
+          cardId: id,
+          level: best?.upgradeLevel ?? 0,
+          quality: best?.quality ?? 100,
+        };
+      });
+  state.dorms.economy = build(state.userDorms.economy).slice(0, state.maxSlots);
+  state.dorms.roll = build(state.userDorms.roll).slice(0, state.maxSlots);
+  return { economy: state.dorms.economy.length, roll: state.dorms.roll.length };
+}

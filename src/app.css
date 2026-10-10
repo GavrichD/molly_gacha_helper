@@ -6,6 +6,8 @@
   --slot-gap: 0.6rem;         /* зазор между слотами */
   --slot-width: 130px;        /* ширина карточки-слота */
   --slot-text-pad: .4rem;     /* отступ текста редкости и имени внутри слота (держит их на одной линии) */
+  --card-backdrop-color: 30, 30, 30;  /* подложка под текстом карт: RGB цвета #1E1E1E */
+  --card-backdrop-alpha: .8;          /* 0.8 = 20% прозрачности; если хотел 20% НЕпрозрачности — поставь 0.2 */
   /* ========================================== */
 
   --panel-bg: #1e1e1e;
@@ -378,8 +380,8 @@ textarea {
   font-size: .72rem;
 }
 .nums .star { color: #999; }
-.n-done    { color: #7cfc9b; }  /* уровни ниже текущего */
-.n-current { color: #7cb8fc; }  /* текущий уровень */
+.n-done    { color: #4d9e63; }  /* пройденные уровни — приглушённее */
+.n-current { color: #8ed0ff; }  /* текущий уровень — ярче */
 .n-gray    { color: #8a8a8a; }  /* будущие уровни / карта не получена */
 
 .pool-bottom {
@@ -399,15 +401,18 @@ textarea {
   margin-bottom: .35rem;
 }
 
-/* ===== Картинки карт ===== */
+/* ===== Картинки карт: фон на 90% карточки, текст поверх ===== */
+.slot, .pool-card { isolation: isolate; }
+
 .art {
-  flex: 1 1 auto;
-  min-height: 0;
+  position: absolute;
+  inset: 5%;              /* картинка занимает 90% карточки */
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  margin: .2rem 0 .3rem;
+  z-index: -1;            /* позади текста, но поверх фона карточки */
+  pointer-events: none;   /* не мешает кликам по карте */
 }
 .art img {
   max-width: 100%;
@@ -415,4 +420,37 @@ textarea {
   object-fit: contain;
   filter: drop-shadow(0 2px 6px rgba(0, 0, 0, .5));
 }
-.pool-card .art { margin: .3rem 0; }
+
+/* ===== Подложка под текстом на карточках ===== */
+.slot .bottom,
+.pool-card .card-text {
+  background: rgba(var(--card-backdrop-color), var(--card-backdrop-alpha));
+  border-radius: 6px;
+  padding: .35rem .4rem;
+}
+
+.pool-card .card-text {
+  margin-top: auto;
+  align-self: stretch;   /* подложка тянется на всю ширину карточки, симметрично краям */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+.pool-card .name,
+.pool-card .nums,
+.pool-card .pool-bottom { margin-top: 0; }
+
+/* цифры ряда эффектов — жирные для читаемости; значок типа — обычный */
+.nums span { font-weight: 700; }
+.nums .star { font-weight: 400; font-size: .8rem; }
+
+/* шапка панели: заголовок слева, кнопка справа */
+.head-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.head-row h2 { flex: 1; margin: 0; }
+.head-row button { flex: 0 0 auto; }

@@ -53,9 +53,9 @@
   {#if tab === 'catalog'}
     <CatalogTab />
   {:else if tab === 'economy'}
-    <EconomyTab target="economy" />
+    <EconomyTab target="economy" onGoImport={() => (tab = 'import')} />
   {:else if tab === 'roll'}
-    <EconomyTab target="roll" hideSegment={true} />
+    <EconomyTab target="roll" hideSegment={true} onGoImport={() => (tab = 'import')} />
   {:else if tab === 'passive'}
     <PassiveTab />
   {:else if tab === 'settings'}
