@@ -3,7 +3,8 @@
   import { loadUserData } from '../lib/api/client';
   
 
-  let userId = $state(945690716);
+  // Пусто по умолчанию; на устройстве, где уже импортировали, вспомнится последний ID
+  let userId = $state<string>(localStorage.getItem('molly-last-user-id') ?? '');
   let loading = $state(false);
   let error = $state('');
   let success = $state('');
@@ -26,7 +27,14 @@
     success = '';
     
     try {
-      const data = await loadUserData(userId);
+      const id = Number(userId);
+      if (!Number.isFinite(id) || id <= 0) {
+        error = 'Введите числовой Telegram ID (например, 123456789). Узнать свой можно у бота @userinfobot.';
+        loading = false;
+        return;
+      }
+      localStorage.setItem('molly-last-user-id', String(id));
+      const data = await loadUserData(id);
       
       appState.userProfile = data.profile;
       appState.userCollection = data.collection.map((c: any) => ({
@@ -78,7 +86,7 @@
   <div class="form-grid">
     <label>
       Telegram ID
-      <input type="number" bind:value={userId} />
+      <input type="number" bind:value={userId} placeholder="Введите ваш Telegram ID" />
     </label>
   </div>
   
