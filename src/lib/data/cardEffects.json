@@ -1,0 +1,1544 @@
+[
+  {
+    "cardId": 2,
+    "category": "other",
+    "effects": [],
+    "implemented": false,
+    "notes": "ВРЕМЕННО: Пурпурная Бабочка, значения с потолка legendary"
+  },
+   {
+    "cardId": 3,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Аянэ, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 4,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "chance_roll_ticket",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          13
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "СеКаори, epic (реальные значения)"
+  },
+  {
+    "cardId": 5,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          3,
+          4,
+          5,
+          7,
+          10
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Карин, common (реальные значения)"
+  },
+  {
+    "cardId": 6,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          3,
+          4,
+          5,
+          7,
+          10
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Цунэя, common (реальные значения)"
+  },
+  {
+    "cardId": 7,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          3,
+          4,
+          5,
+          7,
+          10
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Рика, common (реальные значения)"
+  },
+  {
+    "cardId": 8,
+    "category": "other",
+    "effects": [],
+    "implemented": false,
+    "notes": "ЗАГЛУШКА: заполнить (Страница 99, common)"
+  },
+  {
+    "cardId": 9,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          3,
+          4,
+          5,
+          7,
+          10
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Ио, common (реальные значения)"
+  },
+  {
+    "cardId": 10,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          5,
+          7,
+          10,
+          14,
+          20
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Белый Цвет, rare (реальные значения)"
+  },
+  {
+    "cardId": 11,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Химавари Нагасава, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 12,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Имани, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 13,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          3,
+          4,
+          5,
+          7,
+          10
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Юки, common (реальные значения)"
+  },
+  {
+    "cardId": 14,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "chance_roll_ticket",
+        "valuesByLevel": [
+          2,
+          4,
+          5,
+          7,
+          10
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Пчёлка, rare (реальные значения)"
+  },
+  {
+    "cardId": 15,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Юми, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 16,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          5,
+          7,
+          10,
+          14,
+          20
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Чинами!, rare (реальные значения)"
+  },
+  {
+    "cardId": 17,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "chance_reroll_ticket",
+        "valuesByLevel": [
+          5,
+          7,
+          10,
+          13,
+          20
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Королева Десертов, epic (реальные значения)"
+  },
+  {
+    "cardId": 18,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          5,
+          7,
+          10,
+          14,
+          20
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Тропический Бриз, rare (реальные значения)"
+  },
+  {
+    "cardId": 19,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          3,
+          4,
+          5,
+          7,
+          10
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Ами, common (реальные значения)"
+  },
+  {
+    "cardId": 20,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Девушка-Мина, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 22,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          3,
+          4,
+          5,
+          7,
+          10
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Кирин, common (реальные значения)"
+  },
+  {
+    "cardId": 23,
+    "category": "other",
+    "effects": [],
+    "implemented": false,
+    "notes": "ЗАГЛУШКА: заполнить (Звёздная Принцесса, legendary)"
+  },
+  {
+    "cardId": 24,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          7,
+          10,
+          14,
+          20,
+          29
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Чёрная Роза, epic (реальные значения)"
+  },
+    {
+    "cardId": 25,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          5,
+          7,
+          10,
+          14,
+          20
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Нодока, rare (реальные значения)"
+  },
+  {
+    "cardId": 26,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          3,
+          4,
+          5,
+          7,
+          10
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Ники, common (реальные значения)"
+  },
+  {
+    "cardId": 27,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Сара (реальные значения)"
+  },
+  {
+    "cardId": 28,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          3,
+          4,
+          5,
+          7,
+          10
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Красная Шапочка, common (реальные значения)"
+  },
+  {
+    "cardId": 29,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          3,
+          4,
+          5,
+          7,
+          10
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Норико, common (реальные значения)"
+  },
+  {
+    "cardId": 30,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          3,
+          4,
+          5,
+          7,
+          10
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Сонная Мику, common (реальные значения)"
+  },
+  {
+    "cardId": 31,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          3,
+          4,
+          5,
+          7,
+          10
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Отоха, common (реальные значения)"
+  },
+  {
+    "cardId": 32,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Лапки-Царапки, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 33,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "chance_reroll_ticket",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          13
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Шипы и Розы, rare (реальные значения)"
+  },
+  {
+    "cardId": 34,
+    "category": "other",
+    "effects": [],
+    "implemented": false,
+    "notes": "ЗАГЛУШКА: заполнить (Вакана Небесная, epic)"
+  },
+  {
+    "cardId": 35,
+    "category": "other",
+    "effects": [],
+    "implemented": false,
+    "notes": "ЗАГЛУШКА: заполнить (Сэнсэй Обыкновенный, rare)"
+  },
+  {
+    "cardId": 37,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          3,
+          4,
+          5,
+          7,
+          10
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Маки, common (реальные значения)"
+  },
+  {
+    "cardId": 38,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          3,
+          4,
+          5,
+          7,
+          10
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Депрессивный панк, common (реальные значения)"
+  },
+  {
+    "cardId": 39,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          3,
+          4,
+          5,
+          7,
+          10
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Харука, common (реальные значения)"
+  },
+  {
+    "cardId": 40,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          3,
+          4,
+          5,
+          7,
+          10
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Свободная касса, common (реальные значения)"
+  },
+  {
+    "cardId": 41,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Морозная аристократка, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 42,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Золотой кик, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 43,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Расхитительница Лапши, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 44,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Секай, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 45,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          7,
+          10,
+          14,
+          20,
+          29
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Нао (2), epic (реальные значения)"
+  },
+  {
+    "cardId": 46,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          5,
+          7,
+          10,
+          14,
+          20
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Георгина, rare (реальные значения)"
+  },
+  {
+    "cardId": 47,
+    "category": "other",
+    "effects": [],
+    "implemented": false,
+    "notes": "ЗАГЛУШКА: заполнить (Шиори, legendary)"
+  },
+  {
+    "cardId": 48,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          7,
+          10,
+          14,
+          20,
+          29
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Трофейная Ами, epic (реальные значения)"
+  },
+  {
+    "cardId": 50,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          7,
+          10,
+          14,
+          20,
+          29
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Розовая Звезда, epic (реальные значения)"
+  },
+  {
+    "cardId": 51,
+    "category": "other",
+    "effects": [],
+    "implemented": false,
+    "notes": "ЗАГЛУШКА: заполнить (Маленькая Ведьма, uncommon)"
+  },
+  {
+    "cardId": 52,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          5,
+          7,
+          10,
+          14,
+          20
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Девятая Печать, rare (реальные значения)"
+  },
+  {
+    "cardId": 53,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          5,
+          7,
+          10,
+          14,
+          20
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Чёрный Пион, rare (реальные значения)"
+  },
+  {
+    "cardId": 54,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          10,
+          14,
+          20,
+          29,
+          40
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Ангел Сцены, legendary (реальные значения)"
+  },
+  {
+    "cardId": 55,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          5,
+          7,
+          10,
+          14,
+          20
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Сладкая Подмена, rare (реальные значения)"
+  },
+  {
+    "cardId": 56,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Храмовый Танец, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 57,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Вечерний Сервис, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 58,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Янтарная Улыбка, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 59,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Золотой Прилив, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 60,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Алая Мико, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 61,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          7,
+          10,
+          14,
+          20,
+          29
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Отоха Рокухара, epic (реальные значения)"
+  },
+  {
+    "cardId": 62,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          7,
+          10,
+          14,
+          20,
+          29
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Особое Обслуживание, epic (реальные значения)"
+  },
+  {
+    "cardId": 82,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          5,
+          7,
+          10,
+          14,
+          20
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Красный Дракон, rare (реальные значения)"
+  },
+  {
+    "cardId": 83,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Глубокое Погружение, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 84,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          5,
+          7,
+          10,
+          14,
+          20
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Белая Ночь, rare (реальные значения)"
+  },
+  {
+    "cardId": 85,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          5,
+          7,
+          10,
+          14,
+          20
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Пляжный Босс, rare (реальные значения)"
+  },
+  {
+    "cardId": 86,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          7,
+          10,
+          14,
+          20,
+          29
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Светская Львица, epic (реальные значения)"
+  },
+  {
+    "cardId": 87,
+    "category": "other",
+    "effects": [],
+    "implemented": false,
+    "notes": "ЗАГЛУШКА: заполнить (Гениальный Пловец, epic)"
+  },
+  {
+    "cardId": 88,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Пивозавр, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 89,
+    "category": "other",
+    "effects": [],
+    "implemented": false,
+    "notes": "ЗАГЛУШКА: заполнить (Лунный Свет, legendary)"
+  },
+  {
+    "cardId": 90,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Радужные Очки, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 91,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          5,
+          7,
+          10,
+          14,
+          20
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Полиция Майами, rare (реальные значения)"
+  },
+  {
+    "cardId": 92,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Рабочая Сторона, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 93,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Леди Аврора, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 95,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Боевая Мейдо, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 96,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Горячие Булочки, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 97,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Вне Меню, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 98,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Работа Для Души, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 99,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          7,
+          10,
+          14,
+          20,
+          29
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Дживси, epic (реальные значения)"
+  },
+  {
+    "cardId": 100,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          10,
+          14,
+          20,
+          29,
+          40
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Красное & Белое, legendary (реальные значения)"
+  },
+  {
+    "cardId": 101,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          5,
+          7,
+          10,
+          14,
+          20
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Альт-Макото, rare (реальные значения)"
+  },
+  {
+    "cardId": 102,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          7,
+          10,
+          14,
+          20,
+          29
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Мейдо №1, epic (реальные значения)"
+  },
+  {
+    "cardId": 103,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          5,
+          7,
+          10,
+          14,
+          20
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Острая Курочка, rare (реальные значения)"
+  },
+  {
+    "cardId": 104,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          5,
+          7,
+          10,
+          14,
+          20
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Тёмный Шоколад, rare (реальные значения)"
+  },
+  {
+    "cardId": 105,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Племянница-Горничная, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 131,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Уколы Любви, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 132,
+    "category": "other",
+    "effects": [],
+    "implemented": false,
+    "notes": "ЗАГЛУШКА: заполнить (Эльфийская Песнь, legendary)"
+  },
+  {
+    "cardId": 133,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Всегда На Связи, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 134,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          5,
+          7,
+          10,
+          14,
+          20
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Тень и Бархат, rare (реальные значения)"
+  },
+  {
+    "cardId": 135,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Вечная Весна, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 136,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          5,
+          7,
+          10,
+          14,
+          20
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Космополитан, rare (реальные значения)"
+  },
+  {
+    "cardId": 137,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          5,
+          7,
+          10,
+          14,
+          20
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Адвокатская Тайна, rare (реальные значения)"
+  },
+  {
+    "cardId": 138,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Еретичка, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 139,
+    "category": "other",
+    "effects": [],
+    "implemented": false,
+    "notes": "ЗАГЛУШКА: заполнить (Шарм и Стиль, epic)"
+  },
+  {
+    "cardId": 140,
+    "category": "other",
+    "effects": [],
+    "implemented": false,
+    "notes": "ЗАГЛУШКА: заполнить (Хана-Химэ, epic)"
+  },
+  {
+    "cardId": 141,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Медвежонок, uncommon (реальные значения)"
+  },
+  {
+    "cardId": 142,
+    "category": "economy",
+    "effects": [
+      {
+        "type": "fixed_coins",
+        "valuesByLevel": [
+          4,
+          5,
+          7,
+          10,
+          14
+        ]
+      }
+    ],
+    "implemented": true,
+    "notes": "Чёрная Месса, uncommon (реальные значения)"
+  }
+]

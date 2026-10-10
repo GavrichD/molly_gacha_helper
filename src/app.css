@@ -1,0 +1,418 @@
+:root {
+  color-scheme: dark;
+
+  /* ===== ЗОНА РУЧНОЙ НАСТРОЙКИ LAYOUT ===== */
+  --tab-gap: 1.2rem;          /* отступ под меню навигации */
+  --slot-gap: 0.6rem;         /* зазор между слотами */
+  --slot-width: 130px;        /* ширина карточки-слота */
+  --slot-text-pad: .4rem;     /* отступ текста редкости и имени внутри слота (держит их на одной линии) */
+  /* ========================================== */
+
+  --panel-bg: #1e1e1e;
+  --panel-border: #333;
+  --control-bg: #222;
+  --control-border: #444;
+  --accent: #0066cc;
+  --danger: #7a2c2c;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #141414;
+  color: #eee;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+main { max-width: 1200px; margin: 0 auto; padding: 1.5rem; }
+
+h1 { color: #fff; margin-bottom: .2rem; }
+.subtitle { color: #999; margin-top: 0; }
+
+h2 { color: #ddd; margin-top: 0; border-bottom: 1px solid #333; padding-bottom: .4rem; }
+h3 { color: #ccc; margin-bottom: .4rem; }
+
+.panel {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  padding: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+input, select {
+  padding: .4rem .5rem;
+  background: var(--control-bg);
+  color: #eee;
+  border: 1px solid var(--control-border);
+  border-radius: 4px;
+}
+
+button {
+  padding: .45rem .9rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:disabled { background: #3a3a3a; color: #888; cursor: not-allowed; }
+button.danger { background: var(--danger); }
+button.ghost { background: transparent; border: 1px solid var(--control-border); color: #ccc; }
+
+/* ===== Навигация ===== */
+.tabbar {
+  display: flex;
+  gap: .4rem;
+  flex-wrap: wrap;
+  margin-bottom: var(--tab-gap);
+}
+.tabbar button {
+  padding: .5rem 1rem;
+  background: var(--control-bg);
+  color: #ccc;
+  border: 1px solid var(--panel-border);
+  border-radius: 6px;
+}
+.tabbar button.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+/* ===== Сегментированный контрол ===== */
+.segmented {
+  display: flex;              /* растягиваем на всю ширину, как линию заголовка */
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--control-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  padding: 3px;
+  margin-bottom: 1rem;
+}
+.segmented button {
+  flex: 1 1 0;                /* кнопки занимают равные половины без перекоса */
+  background: transparent;
+  color: #bbb;
+  border: none;
+  padding: .45rem 1.1rem;
+  border-radius: 6px;
+}
+.segmented button.active { background: var(--accent); color: #fff; }
+
+/* ===== Слоты карточек 9:16 ===== */
+.slots {
+  display: grid;
+  grid-template-columns: repeat(8, var(--slot-width));
+  gap: var(--slot-gap);
+  margin-bottom: 1.2rem;
+  overflow-x: auto;
+  padding-bottom: .3rem;
+}
+
+.slot {
+  position: relative;
+  aspect-ratio: 9 / 16;
+  background: #242424;
+  border: 1px solid #3a3a3a;
+  border-radius: 6px;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.slot.empty {
+  border-style: dashed;
+  justify-content: center;
+  align-items: center;
+}
+.slot.empty select { width: 100%; font-size: .85rem; }
+
+.slot .close {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  background: var(--danger);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: .85rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* бейдж редкости сверху */
+.rarity-badge {
+  font-size: .7rem;
+  padding: .1rem var(--slot-text-pad);
+  border-radius: 999px;
+  align-self: flex-start;
+}
+
+/* цвета как в оригинальном боте */
+.r-common     { background: #1d3323; color: #7cfc9b; }  /* зелёный */
+.r-uncommon   { background: #1d2a33; color: #7cb8fc; }  /* синий */
+.r-rare       { background: #2c1d33; color: #d29afc; }  /* фиолетовый */
+.r-epic       { background: #331d1d; color: #fc7c7c; }  /* красный */
+.r-legendary  { background: #333333; color: #f2f2f2; }  /* светлый */
+
+/* нижний кластер: прижат к низу карточки */
+.slot .bottom {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+}
+
+
+.slot .name {
+  font-size: .85rem;
+  font-weight: 600;
+  color: #fff;
+  padding-left: var(--slot-text-pad); /* выравнивает имя по тексту редкости */
+  line-height: 1.1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.slot .controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* качество слева, уровень справа */
+  gap: .3rem;
+  width: 100%;
+}
+
+/* группа «# + качество» */
+.qual-group { display: flex; align-items: center; }
+.hash {
+  color: rgba(255, 255, 255, .35); /* полупрозрачная подсказка */
+  font-size: .8rem;
+  user-select: none;    /* не выделяется и не копируется */
+  pointer-events: none; /* не мешает кликам и вводу */
+  margin-right: 1px;
+}
+
+.slot .controls input,
+.slot .controls select {
+  min-width: 0;
+  font-size: .8rem;
+  padding: .3rem .3rem;
+}
+.slot .controls input { width: 26px; flex: 0 0 26px; } /* уже на 2/5 */
+.slot .controls select { flex: 0 0 auto; }
+
+/* убираем стрелки +/- у числа внутри слотов */
+.slot input[type='number']::-webkit-outer-spin-button,
+.slot input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.slot input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.qual-dash { color: #999; font-size: .8rem; }
+
+/* ===== Блок "показатели + цены" ===== */
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+@media (max-width: 760px) {
+  .bottom-grid { grid-template-columns: 1fr; }
+  .slots { grid-template-columns: repeat(4, var(--slot-width)); }
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: .5rem;
+  font-size: .9rem;
+}
+.price-row label { flex: 1; color: #bbb; }
+.price-row select { min-width: 130px; }
+
+.stats { list-style: none; padding: 0; margin: 0 0 1rem; }
+.stats li { padding: .3rem 0; }
+
+.muted { color: #999; }
+.small { font-size: .85rem; }
+.error { background: #4a1a1a; color: #ff8080; padding: .6rem .8rem; border-radius: 6px; }
+
+/* ===== Каталог ===== */
+.filters { display: flex; gap: .8rem; align-items: center; flex-wrap: wrap; margin-bottom: 1rem; }
+.row {
+  display: flex; justify-content: space-between; gap: 1rem;
+  background: #242424; border: 1px solid #3a3a3a;
+  border-radius: 6px; padding: .7rem .8rem; margin-bottom: .6rem;
+  flex-wrap: wrap;
+}
+.row-main { flex: 1 1 260px; }
+.row-controls { display: flex; align-items: center; gap: .8rem; flex-wrap: wrap; }
+
+.badge {
+  display: inline-block;
+  font-size: .75rem;
+  padding: .1rem .5rem;
+  border-radius: 999px;
+  margin-left: .4rem;
+}
+
+/* ===== Формы ===== */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: .8rem;
+  margin-bottom: 1rem;
+}
+.form-grid label { display: flex; flex-direction: column; gap: .3rem; font-size: .9rem; color: #bbb; }
+
+.success {
+  background: #1d3323;
+  color: #7cfc9b;
+  padding: .6rem .8rem;
+  border-radius: 6px;
+  margin: 1rem 0;
+}
+
+textarea {
+  width: 100%;
+  padding: .5rem;
+  background: var(--control-bg);
+  color: #eee;
+  border: 1px solid var(--control-border);
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: .85rem;
+  min-height: 120px;
+}
+
+
+
+/* ===== Пул карт: скролл-область для добавления в общагу ===== */
+.pool-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: .8rem;
+  flex-wrap: wrap;
+}
+.banner-select { min-width: 220px; }
+
+.dots { display: flex; gap: .25rem; align-items: center; }
+.dot-item {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .3rem .55rem;
+  border-radius: 999px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.dot-item input { position: absolute; opacity: 0; pointer-events: none; }
+.dot-item.active { background: rgba(255, 255, 255, .14); border-color: var(--control-border); }
+.dot { width: 16px; height: 16px; border-radius: 50%; display: inline-block; }
+.dot-text { font-size: .9rem; color: #ccc; }
+
+.pool-grid {
+  --pool-height: 62vh;  /* высота скролл-зоны пула; крути здесь */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: var(--slot-gap);
+  max-height: var(--pool-height);
+  overflow-y: auto;
+  padding: .3rem;
+  border: 1px solid var(--panel-border);
+  border-radius: 6px;
+  background: #1a1a1a;
+}
+
+.pool-card {
+  position: relative;
+  aspect-ratio: 9 / 16;
+  background: #242424;
+  border: 1px solid #3a3a3a;
+  border-radius: 6px;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  cursor: pointer;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.pool-card:hover { border-color: #555; }
+.pool-card.placed { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent) inset; }
+.pool-card.missing { filter: brightness(.45) saturate(.6); }
+
+.pool-card .rarity-badge { margin-top: 0; }
+.pool-card .name {
+  margin-top: .35rem;
+  font-size: .8rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.1;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.pool-card .nums {
+  margin-top: auto;
+  display: flex;
+  gap: .3rem;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: .72rem;
+}
+.nums .star { color: #999; }
+.n-done    { color: #7cfc9b; }  /* уровни ниже текущего */
+.n-current { color: #7cb8fc; }  /* текущий уровень */
+.n-gray    { color: #8a8a8a; }  /* будущие уровни / карта не получена */
+
+.pool-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: .3rem;
+  font-size: .72rem;
+  color: #999;
+}
+
+/* строка вклада карты внутри слота общаги */
+.contrib {
+  font-size: .72rem;
+  color: #bdbdbd;
+  line-height: 1.25;
+  margin-bottom: .35rem;
+}
+
+/* ===== Картинки карт ===== */
+.art {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: .2rem 0 .3rem;
+}
+.art img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, .5));
+}
+.pool-card .art { margin: .3rem 0; }

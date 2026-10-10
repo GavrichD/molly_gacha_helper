@@ -1,0 +1,1511 @@
+{
+  "syncedAt": "2026-10-10T17:42:13.828Z",
+  "cards": [
+    {
+      "id": 2,
+      "name": "Пурпурная Бабочка",
+      "rarity": "legendary",
+      "character_name": "майя",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "884883a4",
+          "render_hash": "2de5268f",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 3,
+      "name": "Аянэ",
+      "rarity": "uncommon",
+      "character_name": "аянэ",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "56067ab0",
+          "render_hash": "8d457d68",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 4,
+      "name": "СеКаори",
+      "rarity": "epic",
+      "character_name": "каори",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "1f7404fb",
+          "render_hash": "70615807",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 5,
+      "name": "Карин",
+      "rarity": "common",
+      "character_name": "карин",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "c634be65",
+          "render_hash": "74bcb7c8",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 6,
+      "name": "Цунэя",
+      "rarity": "common",
+      "character_name": "цунэя",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "86b0cb17",
+          "render_hash": "8fe80f2a",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 7,
+      "name": "Рика",
+      "rarity": "common",
+      "character_name": "рика",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "802afa87",
+          "render_hash": "9c300b89",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 8,
+      "name": "Страница 99",
+      "rarity": "common",
+      "character_name": "футаба",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "3c103cf6",
+          "render_hash": "1350b0b5",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 9,
+      "name": "Ио",
+      "rarity": "common",
+      "character_name": "ио",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "17b3f8e5",
+          "render_hash": "e13b8029",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 10,
+      "name": "Белый Цвет",
+      "rarity": "rare",
+      "character_name": "ясу",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "03a6d985",
+          "render_hash": "3f57e4be",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 11,
+      "name": "Химавари Нагасава",
+      "rarity": "uncommon",
+      "character_name": "химавари",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "c5ef6b78",
+          "render_hash": "75a56fa5",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 12,
+      "name": "Имани",
+      "rarity": "uncommon",
+      "character_name": "имани",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "e3699bae",
+          "render_hash": "ed843d49",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 13,
+      "name": "Юки",
+      "rarity": "common",
+      "character_name": "юки",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "5a9ee4ee",
+          "render_hash": "5a376800",
+          "anim_hash": "",
+          "has_opaque_background": false
+        },
+        "2": {
+          "image_hash": "fd2a97ef",
+          "render_hash": "4c1accb5",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 14,
+      "name": "Пчёлка",
+      "rarity": "rare",
+      "character_name": "ио",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "38e9cae8",
+          "render_hash": "7863be2b",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 15,
+      "name": "Юми",
+      "rarity": "uncommon",
+      "character_name": "юми",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "4c27a4c5",
+          "render_hash": "397197c6",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 16,
+      "name": "Чинами!",
+      "rarity": "rare",
+      "character_name": "чинами",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "802313f6",
+          "render_hash": "65c04894",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 17,
+      "name": "Королева Десертов",
+      "rarity": "epic",
+      "character_name": "рин",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "2a0a25c5",
+          "render_hash": "bee9c798",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 18,
+      "name": "Тропический Бриз",
+      "rarity": "rare",
+      "character_name": "молли",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "fbb87d4c",
+          "render_hash": "72e14f07",
+          "anim_hash": "",
+          "has_opaque_background": false
+        },
+        "2": {
+          "image_hash": "05acbe81",
+          "render_hash": "91a5d68e",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 19,
+      "name": "Ами",
+      "rarity": "common",
+      "character_name": "ами",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "5a6cce68",
+          "render_hash": "34e55312",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 20,
+      "name": "Девушка-Мина",
+      "rarity": "uncommon",
+      "character_name": "чика",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "3a0cd4dd",
+          "render_hash": "3786f2f1",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 22,
+      "name": "Кирин",
+      "rarity": "common",
+      "character_name": "кирин",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "9834694e",
+          "render_hash": "71d0b0a9",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 23,
+      "name": "Звёздная Принцесса",
+      "rarity": "legendary",
+      "character_name": "юта",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "1f1e0776",
+          "render_hash": "d33cc5ee",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 24,
+      "name": "Чёрная Роза",
+      "rarity": "epic",
+      "character_name": "тоука",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "a3d90902",
+          "render_hash": "16583eb9",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 25,
+      "name": "Нодока",
+      "rarity": "rare",
+      "character_name": "нодока",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "2721ffd6",
+          "render_hash": "37456b6e",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 26,
+      "name": "Ники",
+      "rarity": "common",
+      "character_name": "ники",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "d69f778f",
+          "render_hash": "1ee10e3d",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 27,
+      "name": "Сара",
+      "rarity": "uncommon",
+      "character_name": "сара",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "e6c31643",
+          "render_hash": "5c6e9693",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 28,
+      "name": "Красная Шапочка",
+      "rarity": "common",
+      "character_name": "макото",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "0916adcb",
+          "render_hash": "c9384e8a",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 29,
+      "name": "Норико",
+      "rarity": "common",
+      "character_name": "норико",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "d4238a58",
+          "render_hash": "b229f170",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 30,
+      "name": "Сонная Мику",
+      "rarity": "common",
+      "character_name": "мику",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "59efa615",
+          "render_hash": "2d82cc77",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 31,
+      "name": "Отоха",
+      "rarity": "common",
+      "character_name": "отоха",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "cd27be40",
+          "render_hash": "f7b6085b",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 32,
+      "name": "Лапки-Царапки",
+      "rarity": "uncommon",
+      "character_name": "сана",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "59c11fc6",
+          "render_hash": "c629413a",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 33,
+      "name": "Шипы и Розы",
+      "rarity": "rare",
+      "character_name": "осако",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "1bc56302",
+          "render_hash": "fbf237fc",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 34,
+      "name": "Вакана Небесная",
+      "rarity": "epic",
+      "character_name": "вакана",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "2ecaf3d6",
+          "render_hash": "0a835cc5",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 35,
+      "name": "Сэнсэй Обыкновенный",
+      "rarity": "rare",
+      "character_name": "акира",
+      "banner_id": null,
+      "editions": {
+        "1": {
+          "image_hash": "e1c834d7",
+          "render_hash": "cdcbe4c5",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": null
+    },
+    {
+      "id": 37,
+      "name": "Маки",
+      "rarity": "common",
+      "character_name": "маки",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "83b88d95",
+          "render_hash": "d53538d4",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 38,
+      "name": "Депрессивный панк",
+      "rarity": "common",
+      "character_name": "рин",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "c4101e01",
+          "render_hash": "76db419a",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 39,
+      "name": "Харука",
+      "rarity": "common",
+      "character_name": "харука",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "25ab69cd",
+          "render_hash": "26217b81",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 40,
+      "name": "Свободная касса",
+      "rarity": "common",
+      "character_name": "цубаса",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "dfaea9d2",
+          "render_hash": "63f0bfaf",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 41,
+      "name": "Морозная аристократка",
+      "rarity": "uncommon",
+      "character_name": "цукаса",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "ed5895af",
+          "render_hash": "94f78bf8",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 42,
+      "name": "Золотой кик",
+      "rarity": "uncommon",
+      "character_name": "мику",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "b9c08dc0",
+          "render_hash": "a91638ef",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 43,
+      "name": "Расхитительница Лапши",
+      "rarity": "uncommon",
+      "character_name": "цунэя",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "8dff3d45",
+          "render_hash": "b1602856",
+          "anim_hash": "",
+          "has_opaque_background": false
+        },
+        "2": {
+          "image_hash": "773b7863",
+          "render_hash": "614adb20",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 44,
+      "name": "Секай",
+      "rarity": "uncommon",
+      "character_name": "секай",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "fa91bcbf",
+          "render_hash": "78178866",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 45,
+      "name": "Нао (2)",
+      "rarity": "epic",
+      "character_name": "нао",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "4313875a",
+          "render_hash": "d0992d15",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 46,
+      "name": "Георгина",
+      "rarity": "rare",
+      "character_name": "химавари",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "22a4ab7a",
+          "render_hash": "5d5d0f0f",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 47,
+      "name": "Шиори",
+      "rarity": "legendary",
+      "character_name": "шиори",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "1d33f792",
+          "render_hash": "904b0574",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 48,
+      "name": "Трофейная Ами",
+      "rarity": "epic",
+      "character_name": "ами",
+      "banner_id": null,
+      "editions": {
+        "1": {
+          "image_hash": "bd1de689",
+          "render_hash": "6a68b64f",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": null
+    },
+    {
+      "id": 50,
+      "name": "Розовая Звезда",
+      "rarity": "epic",
+      "character_name": "норико",
+      "banner_id": 2,
+      "editions": {
+        "1": {
+          "image_hash": "32e0efd8",
+          "render_hash": "e7122170",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Полуночный фестиваль"
+    },
+    {
+      "id": 51,
+      "name": "Маленькая Ведьма",
+      "rarity": "uncommon",
+      "character_name": "футаба",
+      "banner_id": 2,
+      "editions": {
+        "1": {
+          "image_hash": "125f34a0",
+          "render_hash": "6af1179b",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Полуночный фестиваль"
+    },
+    {
+      "id": 52,
+      "name": "Девятая Печать",
+      "rarity": "rare",
+      "character_name": "сана",
+      "banner_id": 2,
+      "editions": {
+        "1": {
+          "image_hash": "8bddf6e4",
+          "render_hash": "29ad14e5",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Полуночный фестиваль"
+    },
+    {
+      "id": 53,
+      "name": "Чёрный Пион",
+      "rarity": "rare",
+      "character_name": "юми",
+      "banner_id": 2,
+      "editions": {
+        "1": {
+          "image_hash": "933123ad",
+          "render_hash": "f0371376",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Полуночный фестиваль"
+    },
+    {
+      "id": 54,
+      "name": "Ангел Сцены",
+      "rarity": "legendary",
+      "character_name": "ясу",
+      "banner_id": 2,
+      "editions": {
+        "1": {
+          "image_hash": "8a4d386b",
+          "render_hash": "f30e108f",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Полуночный фестиваль"
+    },
+    {
+      "id": 55,
+      "name": "Сладкая Подмена",
+      "rarity": "rare",
+      "character_name": "ники",
+      "banner_id": 2,
+      "editions": {
+        "1": {
+          "image_hash": "d89c3e5d",
+          "render_hash": "69782772",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Полуночный фестиваль"
+    },
+    {
+      "id": 56,
+      "name": "Храмовый Танец",
+      "rarity": "uncommon",
+      "character_name": "майя",
+      "banner_id": 2,
+      "editions": {
+        "1": {
+          "image_hash": "b488dce0",
+          "render_hash": "2e03ff75",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Полуночный фестиваль"
+    },
+    {
+      "id": 57,
+      "name": "Вечерний Сервис",
+      "rarity": "uncommon",
+      "character_name": "юта",
+      "banner_id": 2,
+      "editions": {
+        "1": {
+          "image_hash": "93b5764a",
+          "render_hash": "695d73de",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Полуночный фестиваль"
+    },
+    {
+      "id": 58,
+      "name": "Янтарная Улыбка",
+      "rarity": "uncommon",
+      "character_name": "макото",
+      "banner_id": 2,
+      "editions": {
+        "1": {
+          "image_hash": "4e7ec63b",
+          "render_hash": "f2cc88ed",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Полуночный фестиваль"
+    },
+    {
+      "id": 59,
+      "name": "Золотой Прилив",
+      "rarity": "uncommon",
+      "character_name": "кирин",
+      "banner_id": 2,
+      "editions": {
+        "1": {
+          "image_hash": "411c70e9",
+          "render_hash": "bd21c69c",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Полуночный фестиваль"
+    },
+    {
+      "id": 60,
+      "name": "Алая Мико",
+      "rarity": "uncommon",
+      "character_name": "тоука",
+      "banner_id": 2,
+      "editions": {
+        "1": {
+          "image_hash": "1ca86fea",
+          "render_hash": "c3fb1be6",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Полуночный фестиваль"
+    },
+    {
+      "id": 61,
+      "name": "Отоха Рокухара",
+      "rarity": "epic",
+      "character_name": "отоха",
+      "banner_id": 2,
+      "editions": {
+        "1": {
+          "image_hash": "ca2db712",
+          "render_hash": "6805905c",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Полуночный фестиваль"
+    },
+    {
+      "id": 62,
+      "name": "Особое Обслуживание",
+      "rarity": "epic",
+      "character_name": "рика",
+      "banner_id": null,
+      "editions": {
+        "1": {
+          "image_hash": "1c49fb1b",
+          "render_hash": "ada9b67f",
+          "anim_hash": "",
+          "has_opaque_background": true
+        }
+      },
+      "banner_name": null
+    },
+    {
+      "id": 82,
+      "name": "Красный Дракон",
+      "rarity": "rare",
+      "character_name": "секай",
+      "banner_id": 3,
+      "editions": {
+        "1": {
+          "image_hash": "f28bc6a0",
+          "render_hash": "e6d1de8f",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Пляжное безумие"
+    },
+    {
+      "id": 83,
+      "name": "Глубокое Погружение",
+      "rarity": "uncommon",
+      "character_name": "каори",
+      "banner_id": 3,
+      "editions": {
+        "1": {
+          "image_hash": "bba73be7",
+          "render_hash": "3aac53d0",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Пляжное безумие"
+    },
+    {
+      "id": 84,
+      "name": "Белая Ночь",
+      "rarity": "rare",
+      "character_name": "сара",
+      "banner_id": 3,
+      "editions": {
+        "1": {
+          "image_hash": "d8b55484",
+          "render_hash": "96dd3597",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Пляжное безумие"
+    },
+    {
+      "id": 85,
+      "name": "Пляжный Босс",
+      "rarity": "rare",
+      "character_name": "чика",
+      "banner_id": 3,
+      "editions": {
+        "1": {
+          "image_hash": "879fae44",
+          "render_hash": "9f331bad",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Пляжное безумие"
+    },
+    {
+      "id": 86,
+      "name": "Светская Львица",
+      "rarity": "epic",
+      "character_name": "молли",
+      "banner_id": 3,
+      "editions": {
+        "1": {
+          "image_hash": "ab6126ac",
+          "render_hash": "41b75459",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Пляжное безумие"
+    },
+    {
+      "id": 87,
+      "name": "Гениальный Пловец",
+      "rarity": "epic",
+      "character_name": "нодока",
+      "banner_id": 1,
+      "editions": {
+        "1": {
+          "image_hash": "ebc1de11",
+          "render_hash": "2eb021f4",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Стандартный"
+    },
+    {
+      "id": 88,
+      "name": "Пивозавр",
+      "rarity": "uncommon",
+      "character_name": "юки",
+      "banner_id": 3,
+      "editions": {
+        "1": {
+          "image_hash": "2a664da0",
+          "render_hash": "d25b0580",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Пляжное безумие"
+    },
+    {
+      "id": 89,
+      "name": "Лунный Свет",
+      "rarity": "legendary",
+      "character_name": "аянэ",
+      "banner_id": 3,
+      "editions": {
+        "1": {
+          "image_hash": "fda2874d",
+          "render_hash": "9211074b",
+          "anim_hash": "",
+          "has_opaque_background": true
+        }
+      },
+      "banner_name": "Пляжное безумие"
+    },
+    {
+      "id": 90,
+      "name": "Радужные Очки",
+      "rarity": "uncommon",
+      "character_name": "карин",
+      "banner_id": 3,
+      "editions": {
+        "1": {
+          "image_hash": "85913d44",
+          "render_hash": "17dd647a",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Пляжное безумие"
+    },
+    {
+      "id": 91,
+      "name": "Полиция Майами",
+      "rarity": "rare",
+      "character_name": "имани",
+      "banner_id": 3,
+      "editions": {
+        "1": {
+          "image_hash": "efbb9d82",
+          "render_hash": "de58689a",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Пляжное безумие"
+    },
+    {
+      "id": 92,
+      "name": "Рабочая Сторона",
+      "rarity": "uncommon",
+      "character_name": "вакана",
+      "banner_id": 3,
+      "editions": {
+        "1": {
+          "image_hash": "3a497850",
+          "render_hash": "4b2971c2",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Пляжное безумие"
+    },
+    {
+      "id": 93,
+      "name": "Леди Аврора",
+      "rarity": "uncommon",
+      "character_name": "маки",
+      "banner_id": 3,
+      "editions": {
+        "1": {
+          "image_hash": "42e3d4bc",
+          "render_hash": "6aec770e",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Пляжное безумие"
+    },
+    {
+      "id": 95,
+      "name": "Боевая Мейдо",
+      "rarity": "uncommon",
+      "character_name": "осако",
+      "banner_id": 4,
+      "editions": {
+        "1": {
+          "image_hash": "4c1c19ce",
+          "render_hash": "11193122",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Непутёвые мейдо"
+    },
+    {
+      "id": 96,
+      "name": "Горячие Булочки",
+      "rarity": "uncommon",
+      "character_name": "рика",
+      "banner_id": 4,
+      "editions": {
+        "1": {
+          "image_hash": "03e814a5",
+          "render_hash": "8a33e296",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Непутёвые мейдо"
+    },
+    {
+      "id": 97,
+      "name": "Вне Меню",
+      "rarity": "uncommon",
+      "character_name": "харука",
+      "banner_id": 4,
+      "editions": {
+        "1": {
+          "image_hash": "9de16769",
+          "render_hash": "846dc26f",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Непутёвые мейдо"
+    },
+    {
+      "id": 98,
+      "name": "Работа Для Души",
+      "rarity": "uncommon",
+      "character_name": "цубаса",
+      "banner_id": 4,
+      "editions": {
+        "1": {
+          "image_hash": "63dcea72",
+          "render_hash": "52d9b9b4",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Непутёвые мейдо"
+    },
+    {
+      "id": 99,
+      "name": "Дживси",
+      "rarity": "epic",
+      "character_name": "цукаса",
+      "banner_id": 4,
+      "editions": {
+        "1": {
+          "image_hash": "ceb1de3c",
+          "render_hash": "c6836c89",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Непутёвые мейдо"
+    },
+    {
+      "id": 100,
+      "name": "Красное & Белое",
+      "rarity": "legendary",
+      "character_name": "нао",
+      "banner_id": 4,
+      "editions": {
+        "1": {
+          "image_hash": "d336cb6c",
+          "render_hash": "0b7b4d24",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Непутёвые мейдо"
+    },
+    {
+      "id": 101,
+      "name": "Альт-Макото",
+      "rarity": "rare",
+      "character_name": "макото",
+      "banner_id": 4,
+      "editions": {
+        "1": {
+          "image_hash": "c6c5b2ba",
+          "render_hash": "25e78dca",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Непутёвые мейдо"
+    },
+    {
+      "id": 102,
+      "name": "Мейдо №1",
+      "rarity": "epic",
+      "character_name": "ники",
+      "banner_id": 4,
+      "editions": {
+        "1": {
+          "image_hash": "93fb269d",
+          "render_hash": "1f96a5d4",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Непутёвые мейдо"
+    },
+    {
+      "id": 103,
+      "name": "Острая Курочка",
+      "rarity": "rare",
+      "character_name": "мику",
+      "banner_id": 4,
+      "editions": {
+        "1": {
+          "image_hash": "9db1ccd9",
+          "render_hash": "72a91bd2",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Непутёвые мейдо"
+    },
+    {
+      "id": 104,
+      "name": "Тёмный Шоколад",
+      "rarity": "rare",
+      "character_name": "цунэя",
+      "banner_id": 4,
+      "editions": {
+        "1": {
+          "image_hash": "fc605eec",
+          "render_hash": "44ea25e5",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Непутёвые мейдо"
+    },
+    {
+      "id": 105,
+      "name": "Племянница-Горничная",
+      "rarity": "uncommon",
+      "character_name": "ами",
+      "banner_id": 4,
+      "editions": {
+        "1": {
+          "image_hash": "220d4a57",
+          "render_hash": "5ebcb807",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "Непутёвые мейдо"
+    },
+    {
+      "id": 131,
+      "name": "Уколы Любви",
+      "rarity": "uncommon",
+      "character_name": "Норико",
+      "banner_id": 5,
+      "editions": {
+        "1": {
+          "image_hash": "44772b28",
+          "render_hash": "7d7fe6ef",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "After School"
+    },
+    {
+      "id": 132,
+      "name": "Эльфийская Песнь",
+      "rarity": "legendary",
+      "character_name": "Ио",
+      "banner_id": 5,
+      "editions": {
+        "1": {
+          "image_hash": "84d87930",
+          "render_hash": "c4155480",
+          "anim_hash": "",
+          "has_opaque_background": true
+        }
+      },
+      "banner_name": "After School"
+    },
+    {
+      "id": 133,
+      "name": "Всегда На Связи",
+      "rarity": "uncommon",
+      "character_name": "Чинами",
+      "banner_id": 5,
+      "editions": {
+        "1": {
+          "image_hash": "09e55e10",
+          "render_hash": "ad62853d",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "After School"
+    },
+    {
+      "id": 134,
+      "name": "Тень и Бархат",
+      "rarity": "rare",
+      "character_name": "Рин",
+      "banner_id": 5,
+      "editions": {
+        "1": {
+          "image_hash": "f0dc26cd",
+          "render_hash": "ff17561c",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "After School"
+    },
+    {
+      "id": 135,
+      "name": "Вечная Весна",
+      "rarity": "uncommon",
+      "character_name": "Чиаки",
+      "banner_id": 5,
+      "editions": {
+        "1": {
+          "image_hash": "ce38b014",
+          "render_hash": "0c589a6a",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "After School"
+    },
+    {
+      "id": 136,
+      "name": "Космополитан",
+      "rarity": "rare",
+      "character_name": "Кирин",
+      "banner_id": 5,
+      "editions": {
+        "1": {
+          "image_hash": "d871ca7e",
+          "render_hash": "4a5960ee",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "After School"
+    },
+    {
+      "id": 137,
+      "name": "Адвокатская Тайна",
+      "rarity": "rare",
+      "character_name": "Юта",
+      "banner_id": 5,
+      "editions": {
+        "1": {
+          "image_hash": "e60bcc09",
+          "render_hash": "5395f979",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "After School"
+    },
+    {
+      "id": 138,
+      "name": "Еретичка",
+      "rarity": "uncommon",
+      "character_name": "Ясу",
+      "banner_id": 5,
+      "editions": {
+        "1": {
+          "image_hash": "c8b6c4f8",
+          "render_hash": "f3989a5a",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "After School"
+    },
+    {
+      "id": 139,
+      "name": "Шарм и Стиль",
+      "rarity": "epic",
+      "character_name": "Чика",
+      "banner_id": 5,
+      "editions": {
+        "1": {
+          "image_hash": "e5356ad6",
+          "render_hash": "5b94f4b7",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "After School"
+    },
+    {
+      "id": 140,
+      "name": "Хана-Химэ",
+      "rarity": "epic",
+      "character_name": "Химавари",
+      "banner_id": 5,
+      "editions": {
+        "1": {
+          "image_hash": "ca79e90c",
+          "render_hash": "a8003e4d",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "After School"
+    },
+    {
+      "id": 141,
+      "name": "Медвежонок",
+      "rarity": "uncommon",
+      "character_name": "Нао",
+      "banner_id": 5,
+      "editions": {
+        "1": {
+          "image_hash": "54147b28",
+          "render_hash": "6fb57139",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "After School"
+    },
+    {
+      "id": 142,
+      "name": "Чёрная Месса",
+      "rarity": "uncommon",
+      "character_name": "Отоха",
+      "banner_id": 5,
+      "editions": {
+        "1": {
+          "image_hash": "931f0e8c",
+          "render_hash": "1374795b",
+          "anim_hash": "",
+          "has_opaque_background": false
+        }
+      },
+      "banner_name": "After School"
+    }
+  ]
+}
