@@ -8,11 +8,50 @@ function buildUrl(path: string): string {
 }
 
 export async function fetchFromApi<T = any>(path: string): Promise<T> {
-  const response = await fetch(buildUrl(path));
+  const url = buildUrl(path);
+  let response: Response;
+  try {
+    response = await fetch(url);
+  } catch (e: any) {
+    // сетевой уровень: блокировка провайдером, CORS, отсутствие сети
+    throw new Error(`${e?.name ?? 'Ошибка'}: ${e?.message ?? e} | адрес: ${url}`);
+  }
   if (!response.ok) {
-    throw new Error(`HTTP ${response.status} при запросе ${path}`);
+    throw new Error(`HTTP ${response.status} по адресу ${url}`);
   }
   return (await response.json()) as T;
+}
+
+// Пошаговая диагностика: почему не работает импорт
+export async function diagnose(userId: number): Promise<string[]> {
+  const lines: string[] = [];
+  lines.push(`Браузер считает, что онлайн: ${navigator.onLine ? 'да' : 'нет'}`);
+
+  // Шаг 1: доступен ли сам воркер
+  try {
+    const r = await fetch(config.proxyUrl + '/', { method: 'GET' });
+    lines.push(`1. Воркер ${config.proxyUrl}: HTTP ${r.status} — доступен`);
+  } catch (e: any) {
+    lines.push(`1. Воркер ${config.proxyUrl}: НЕдоступен (${e?.name}: ${e?.message}).`);
+    lines.push('   Вероятная причина: провайдер блокирует домен workers.dev');
+    lines.push('   (YouTube и cloudflare.com при этом могут работать — это другие домены).');
+    lines.push('   Решения: VPN на всё устройство ИЛИ «Ручная вставка JSON» ниже.');
+    return lines;
+  }
+
+  // Шаг 2: отвечает ли игра через воркер
+  try {
+    const path = `/profile?user_id=${userId}`;
+    const r = await fetch(config.proxyUrl + '/?path=' + encodeURIComponent(path));
+    const text = await r.text();
+    lines.push(`2. API игры через воркер: HTTP ${r.status}, ответ ${text.length} байт.`);
+    if (!r.ok) lines.push('   Тело ответа: ' + text.slice(0, 200));
+  } catch (e: any) {
+    lines.push(`2. API игры через воркер: ошибка (${e?.name}: ${e?.message}).`);
+    lines.push('   Воркер жив, но запрос не прошёл: возможно, игра лежит или сменила адреса.');
+  }
+
+  return lines;
 }
 
 export const getProfile = (userId: number) =>

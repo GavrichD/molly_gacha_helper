@@ -98,7 +98,7 @@
   {/if}
 
   <!-- 8 слотов всегда видны -->
-  <div class="slots">
+  <div class="slots" style="--slots-cols: {appState.maxSlots}">
     {#each Array(appState.maxSlots) as _, i}
       {@const placed = slots[i]}
       <CardSlot target={effectiveTarget} cardId={placed?.cardId} />

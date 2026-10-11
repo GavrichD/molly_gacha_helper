@@ -62,8 +62,10 @@
 
 {#if card && placed && cardId != null}
   <div class="slot">
-    <button class="close" title="Убрать из общаги" onclick={() => removeCard(target, cardId)}>×</button>
-
+    <div class="slot-top">
+      <span class="rarity-badge r-{card.rarity}">{rarityLabel(card.rarity)}</span>
+      <button class="close" title="Убрать из общаги" onclick={() => removeCard(target, cardId)}>×</button>
+    </div>
     <div class="art">
       {#if artUrl}
         <img
@@ -76,7 +78,6 @@
     </div>
 
     <div class="bottom">
-      <span class="rarity-badge r-{card.rarity}">{rarityLabel(card.rarity)}</span>
       <div class="name">{card.name}</div>
 
       <div class="contrib">

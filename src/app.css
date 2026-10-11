@@ -102,11 +102,10 @@ button.ghost { background: transparent; border: 1px solid var(--control-border);
 /* ===== Слоты карточек 9:16 ===== */
 .slots {
   display: grid;
-  grid-template-columns: repeat(8, var(--slot-width));
+  /* колонок столько, сколько слотов; ширина резиновая, пропорцию держит aspect-ratio */
+  grid-template-columns: repeat(var(--slots-cols, 8), 1fr);
   gap: var(--slot-gap);
   margin-bottom: 1.2rem;
-  overflow-x: auto;
-  padding-bottom: .3rem;
 }
 
 .slot {
@@ -229,7 +228,7 @@ button.ghost { background: transparent; border: 1px solid var(--control-border);
 }
 @media (max-width: 760px) {
   .bottom-grid { grid-template-columns: 1fr; }
-  .slots { grid-template-columns: repeat(4, var(--slot-width)); }
+  .slots { grid-template-columns: repeat(calc(var(--slots-cols, 8) / 2), 1fr); }
 }
 
 .price-row {
@@ -301,12 +300,23 @@ textarea {
 
 /* ===== Пул карт: скролл-область для добавления в общагу ===== */
 .pool-filters {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; /* слева баннер, центр редкость, справа сортировка */
   align-items: center;
   gap: 1rem;
   margin-bottom: .8rem;
-  flex-wrap: wrap;
+}
+.pool-filters .f-left  { justify-self: start; }
+.pool-filters .f-center { justify-self: center; }
+.pool-filters .f-right { justify-self: end; }
+.sort-select { min-width: 170px; }
+
+@media (max-width: 760px) {
+  .pool-filters { grid-template-columns: 1fr; }
+  .pool-filters .f-left,
+  .pool-filters .f-center,
+  .pool-filters .f-right { justify-self: stretch; }
+  .sort-select { width: 100%; }
 }
 .banner-select { min-width: 220px; }
 
@@ -454,3 +464,42 @@ textarea {
 }
 .head-row h2 { flex: 1; margin: 0; }
 .head-row button { flex: 0 0 auto; }
+
+/* ===== Ранг и крестик в одном верхнем ряду; у ранга только цветная пилюля ===== */
+.slot-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .3rem;
+}
+.slot-top .close {
+  position: static;   /* крестик больше не абсолютный — стоит в ряду с рангом */
+  top: auto;
+  right: auto;
+  flex: 0 0 auto;
+}
+.slot-top .rarity-badge {
+  margin-top: 0;      /* ранг в верхнем ряду, отступ под крестик больше не нужен */
+}
+
+
+/* ===== Диагностика и подсказка во вкладке «Импорт» ===== */
+.diag {
+  background: #101010;
+  border: 1px solid var(--panel-border);
+  border-radius: 6px;
+  padding: .8rem;
+  font-family: monospace;
+  font-size: .8rem;
+  white-space: pre-wrap;
+  color: #cfcfcf;
+}
+.help {
+  margin: .8rem 0;
+  background: var(--control-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 6px;
+  padding: .6rem .8rem;
+}
+.help summary { cursor: pointer; color: #ccc; }
+.help ol { margin: .6rem 0 .4rem 1.2rem; padding: 0; }

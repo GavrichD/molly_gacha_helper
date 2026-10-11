@@ -12,9 +12,11 @@
   import { rarityLabel } from '../lib/format';
   import { cardImageUrl } from '../lib/data/images';
   import type { Rarity, EffectType } from '../lib/types';
+  import { profitGroup, profitScore } from '../lib/calc/profit';
 
   let bannerFilter = $state<string>('all');
   let rarityFilter = $state<string>('all');
+  let sortMode = $state<'profit' | 'rarity'>('profit');
 
   const rarityOrder: Record<Rarity, number> = {
     legendary: 0, epic: 1, rare: 2, uncommon: 3, common: 4,
@@ -78,7 +80,17 @@
       .filter((x) => bannerFilter === 'all' || cardById(x.id)?.banner_name === bannerFilter)
       .filter((x) => rarityFilter === 'all' || x.rarity === rarityFilter)
       .sort((a, b) => {
-        if (a.owned !== b.owned) return a.owned ? -1 : 1;
+        if (a.owned !== b.owned) return a.owned ? -1 : 1; // отсутствующие всегда в конце
+        if (sortMode === 'profit') {
+          const ga = profitGroup(a.effectType);
+          const gb = profitGroup(b.effectType);
+          if (ga !== gb) return ga - gb; // группы: roll ticket → reroll ticket → монеты
+          const va = profitScore(a);
+          const vb = profitScore(b);
+          if (va !== vb) return vb - va; // внутри группы — по убыванию эффективности
+          return a.name.localeCompare(b.name, 'ru');
+        }
+        // режим «по редкости» — прежнее поведение
         if (rarityOrder[a.rarity] !== rarityOrder[b.rarity]) {
           return rarityOrder[a.rarity] - rarityOrder[b.rarity];
         }
@@ -113,24 +125,35 @@
 
 <section class="panel">
   <div class="pool-filters">
-    <select class="banner-select" bind:value={bannerFilter}>
-      <option value="all">Все баннеры</option>
-      {#each banners as b}
-        <option value={b}>{b}</option>
-      {/each}
-    </select>
+    <div class="f-left">
+      <select class="banner-select" bind:value={bannerFilter}>
+        <option value="all">Все баннеры</option>
+        {#each banners as b}
+          <option value={b}>{b}</option>
+        {/each}
+      </select>
+    </div>
 
-    <div class="dots">
-      <label class="dot-item" class:active={rarityFilter === 'all'}>
-        <input type="radio" name="pool-rarity" value="all" bind:group={rarityFilter} />
-        <span class="dot-text">Все</span>
-      </label>
-      {#each dots as d}
-        <label class="dot-item" class:active={rarityFilter === d.r}>
-          <input type="radio" name="pool-rarity" value={d.r} bind:group={rarityFilter} />
-          <span class="dot" style="background: {d.color}"></span>
+    <div class="f-center">
+      <div class="dots">
+        <label class="dot-item" class:active={rarityFilter === 'all'}>
+          <input type="radio" name="pool-rarity" value="all" bind:group={rarityFilter} />
+          <span class="dot-text">Все</span>
         </label>
-      {/each}
+        {#each dots as d}
+          <label class="dot-item" class:active={rarityFilter === d.r}>
+            <input type="radio" name="pool-rarity" value={d.r} bind:group={rarityFilter} />
+            <span class="dot" style="background: {d.color}"></span>
+          </label>
+        {/each}
+      </div>
+    </div>
+
+    <div class="f-right">
+      <select class="sort-select" bind:value={sortMode}>
+        <option value="profit">По прибыльности</option>
+        <option value="rarity">По редкости</option>
+      </select>
     </div>
   </div>
 

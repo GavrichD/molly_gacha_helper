@@ -1,6 +1,6 @@
 <script lang="ts">
   import { state as appState, applyGameDorms } from '../lib/state.svelte';
-  import { loadUserData } from '../lib/api/client';
+  import { loadUserData, diagnose } from '../lib/api/client';
   
 
   // Пусто по умолчанию; на устройстве, где уже импортировали, вспомнится последний ID
@@ -11,6 +11,20 @@
   let showFallback = $state(false);
   let fallbackJson = $state('');
   let applied = $state('');
+  let diagLines = $state<string[]>([]);
+  let diagRunning = $state(false);
+
+  async function runDiagnose() {
+    diagRunning = true;
+    diagLines = [];
+    try {
+      diagLines = await diagnose(Number(userId) || 0);
+    } catch (e: any) {
+      diagLines = ['Диагностика сама упала: ' + (e?.message ?? String(e))];
+    } finally {
+      diagRunning = false;
+    }
+  }
 
   function applyDorms() {
     const r = applyGameDorms();
@@ -89,6 +103,21 @@
       <input type="number" bind:value={userId} placeholder="Введите ваш Telegram ID" />
     </label>
   </div>
+
+  <details class="help">
+    <summary>Как узнать свой ID?</summary>
+    <ol class="small">
+      <li>Открой Telegram.</li>
+      <li>Найди через поиск бота <strong>@userinfobot</strong>.</li>
+      <li>Отправь ему любое сообщение (например, /start).</li>
+      <li>Бот пришлёт ответ — строка <strong>Id</strong> и есть твой числовой ID.</li>
+      <li>Вставь его в поле выше и нажми «Загрузить данные».</li>
+    </ol>
+    <p class="muted small">
+      ID — не пароль: по нему видны только публичные данные (коллекция, общага, профиль).
+      Им безопасно делиться с друзьями для сравнения сборок.
+    </p>
+  </details>
   
   <p>
     <button onclick={handleImport} disabled={loading}>
@@ -98,6 +127,14 @@
   
   {#if error}
     <div class="error">{error}</div>
+    <p>
+      <button class="ghost" onclick={runDiagnose} disabled={diagRunning}>
+        {diagRunning ? 'Диагностика…' : 'Почему не грузится? Диагностика'}
+      </button>
+    </p>
+    {#if diagLines.length}
+      <pre class="diag">{diagLines.join('\n')}</pre>
+    {/if}
   {/if}
   
   {#if success}
